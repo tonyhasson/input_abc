@@ -143,6 +143,7 @@ class array(timer):
                pygame.display.update()
            self.first_time = False
        elif num == 2:
+           self.count_letters=0
            self.pos = random.randint(0, len(self.arr) - 1)
            self.start_clock()
            while float(self.backward_clock()) > 0:
